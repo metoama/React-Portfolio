@@ -4,37 +4,21 @@ import Contact from './Contact';
 import Resume from './Resume';
 import Portfolio from './Portfolio';
 
-
-
-
-
-
-const styles = {
-    navBar: {
-        display: 'flex',
-        flexDirection: 'row',
-        listStyle: 'none'
-    },
-    navItem: {
-        marginLeft: '2rem'
-    } 
-}
-
-
+import './styles/Header.css'; 
 
 export  function Header({ onNavItemClick}) {
     return (
-        <div>
+        <div className='headerContainer'>
             <h1>Arinze Mike Etoama</h1>
             <nav> 
-                <ul style={styles.navBar}>
+                <ul>
                     {
                         NAV_ITEMS.map(item =>{
                             return (
                                 <li 
                                     key={item.itemName} 
                                     onClick={() => onNavItemClick(item.itemName)}
-                                    style={styles.navItem}>
+                                    >
                                     {item.itemName}
                                 </li>
 

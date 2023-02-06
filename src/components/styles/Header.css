@@ -1,0 +1,31 @@
+.headerContainer {
+    width: 100%;
+    background:#3185FC;
+    margin: 0;
+    height: 3rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+} 
+
+.headerContainer h1 {
+    margin: 0;
+    display: inline-block;
+    align-items: center;
+}
+
+.headerContainer ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-right: 2rem;
+}
+
+.headerContainer li {
+    margin-left: 2rem;
+    cursor: pointer;
+}
+     

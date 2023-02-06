@@ -1,5 +1,7 @@
+import './styles/AboutMe.css';
+
 export default function AboutMe() {
     return (
-        <div>About Me</div> 
+        <div className='about-me'>About Me</div> 
     )
 }
